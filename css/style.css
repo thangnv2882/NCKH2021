@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.modal-option {
+    margin: 0;
+    height: 100vh;
+    width: 20%;
+}
+
+.modal-backdrop
+{
+    opacity:0.05 !important;
+}
+
+/* ============= Scroll =============*/
+.modal-option .modal-content {
+    height: 100vh;
+    background: #fff !important;
+    overflow: hidden overlay;
+    overscroll-behavior: contain;
+    will-change: scroll-position;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  
+  .modal-option .modal-content.has-mask {
+    -webkit-mask-image: linear-gradient(180deg,hsla(0,0%,100%,0),hsla(0,0%,100%,.8) 10%,#fff 25%)
+  }
+  
+  .modal-option .modal-content::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .modal-option .modal-content:hover::-webkit-scrollbar {
+    display: block;
+    width: 4px;
+  }
+  
+  .modal-option .modal-content::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background: transparent;
+  }
+  
+  .modal-option .modal-content::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: #888;
+  }
+
+
+  .sofa_texture_img {
+    padding-top: 100%;
+    object-fit: cover;
+  }
+
+  .sofa_texture {
+    width: 49%;
+  }
+  .sofa_texture:hover, .model_add:hover {
+    cursor: pointer;
+  }
+
+  .model_add {
+    width: 100%;
+    
+  }
+
+  .addModelButton {
+    position: absolute;
+  }
